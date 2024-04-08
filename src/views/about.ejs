@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>About us</title>
+  </head>
+  <body>
+    <%- include("blocks/header") -%>
+    <div class="container">
+      <div class="photo">
+        <img src="<%= photo %>" alt="student_photo" />
+      </div>
+      <div class="about">
+        <div class="name"><%= username %></div>
+        <div class="info"><%= text %></div>
+      </div>
+    </div>
+    <%- include("blocks/footer") -%>
+  </body>
+</html>

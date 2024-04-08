@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(194, 170, 140);
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 11% 78% 1fr;
+}
+
+header {
+  width: auto;
+  display: flex;
+  background: rgb(36, 21, 1);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.header_div1 {
+  width: 10%;
+}
+
+.header_div1 p {
+  margin-left: 50%;
+  font-size: 17px;
+  font-family: system-ui;
+  color: rgb(223, 180, 125);
+}
+
+.header_div2 {
+  width: 75%;
+  height: auto;
+}
+
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(240, 193, 132);
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(235, 215, 188);
+}
+
+header li {
+  width: 20%;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: auto;
+  margin-left: 25%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  margin: 3%;
+}
+
+.photo {
+  height: 90%;
+  width: 55%;
+}
+
+.photo img {
+  width: 90%;
+  height: 90%;
+  --s: 10px;
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  margin-top: 7%;
+}
+
+.name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+}
+
+.info {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer {
+  background: rgb(36, 21, 1);
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  align-items: center;
+}
+
+.social_m {
+  display: grid;
+  grid-template-rows: 50% 1fr;
+  margin-left: 10%;
+  margin-top: 1%;
+}
